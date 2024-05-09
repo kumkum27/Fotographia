@@ -1,0 +1,812 @@
+html{
+    font: 1em ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+*{
+    color: white;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.bg_colors{
+    background-color: rgb(3 7 18);
+}
+.navbarr{
+    height: 14vh;
+    background-color: black;
+}
+.nav_containerr{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: auto;
+    justify-content: space-between;
+    height: 100%;
+}
+.logoo{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 25%;
+    height: 55%;
+}
+.logoo img{
+    width: 80%;
+    margin: auto;
+    margin-left: 2rem;
+}
+.textt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+.linkss{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 5px;
+    width:70%;
+}
+.ul_linkss{
+    display: flex;
+    /* font-size: 1.2rem; */
+    font-weight: 600;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2px;
+    gap: 1.5rem;
+}
+.ul_linkss a{
+    margin: auto 0.8rem;
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.ul_linkss a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.ul_linkss a:hover {
+    color:#efaa5fef;
+}
+
+.ul_linkss a:hover::after {
+    width: 100%;
+    background-color: #efaa5fef;
+}
+
+
+
+.snss{
+    width: 25%;
+    margin: auto;
+}
+.sns_linkss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2px;
+}
+
+.sns_linkss a img{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.sns_linkss a img:hover{
+    transform: scale(1.3);
+}
+
+
+/* .sns_links a{
+    margin: auto 15px;
+
+} */
+
+.sns_linkss a img{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+}
+
+
+                                            /* HEADER */
+
+
+.headerr{
+    height: 100%;
+}
+
+.containerr{
+    /* width: 100%; */
+    height: 100%;
+}
+
+.carousel .carousel-item {
+    height: 750px;
+    /* transition: transform 2s ease, opacity .5s ease-out */
+  }
+
+  
+.carousel-item img {
+      position: absolute;
+      object-fit:fill;
+      top: -150px;
+      left: 0;
+      min-height: 750px;
+      opacity: 0.3;
+}
+
+.carousel-item{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 37%, rgba(0, 0, 0, 0.55) 61%);
+ 
+}
+
+.carousel-caption-top {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    padding: 20px;
+    color: #fff;
+}
+
+.carousel-caption-second {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    padding: 20px;
+    color: #fff;
+}
+
+.carousel-caption-third {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    padding: 20px;
+    color: #fff;
+}
+
+
+.carousel-caption-top h5 {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    line-height: 5rem;
+}
+
+.carousel-caption-top h5::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(202, 157, 97);
+    transition: width 0.3s ease-in-out;
+}
+
+.carousel-caption-top h5:hover {
+    color: rgb(202, 157, 97);
+}
+
+.carousel-caption-top h5:hover::before {
+    width: 100%;
+    width: calc(100% - 10px);
+}
+
+.carousel-control-prev,
+        .carousel-control-next {
+            top: 120px; 
+        }
+
+.c_heading{
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-size:2.9rem;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: inline-block;
+}
+.c_para{
+    color: rgb(230, 179, 114);
+    font-style: italic;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    font-weight:600;
+}
+
+
+                                                /* MAIN */
+
+                                            /* 1.) Portfolio */
+      
+           
+.folio_container{
+    margin: auto;
+    
+}
+
+
+.folio_heading{
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    padding: 12rem;
+    text-align: center;
+}
+
+.folio_head1{
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 5rem;
+    /* display: inline-block; */
+    transition: color 0.3s ease-in-out;
+}
+
+
+.folio_head1:hover {
+    color: #7d6043;
+    }
+
+
+.folio_head2{
+    color: #fff;
+    font-weight: 350;
+    font-size: 2.4rem;
+    /* line-height: 1rem; */
+    font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+}
+
+
+
+.folio_head2 {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.folio_head2::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #7d6043;
+    transition: width 0.3s ease-in-out;
+}
+
+.folio_head2:hover {
+    color: #eeb881;
+}
+
+.folio_head2:hover::before {
+    width: calc(100% - 10px);
+}
+
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.photo-card {
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.photo-card img {
+    width: 330px;
+    height: 497px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.photo-card img:hover {
+    filter: none;
+    transform: scale(1.1); 
+}
+
+.folio_button{
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    margin: auto;
+}
+
+
+.folio_btn{
+    left: 50%;
+    background-color: #8c6d4e;
+    margin: 4rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: 1px white;
+    font-weight: 450;
+    font-size: large;
+}
+
+.folio_btn:hover{
+    font-weight: 600;
+    background-color: #62492f;
+}
+
+
+                                                /* 2.) About Us */
+
+.aboutt{
+    background-color: #111111;
+}
+
+
+.about_container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.decor{
+    display: flex;
+    justify-content: start;
+    margin: auto 0px;
+}
+.decor_reverse{
+    display: flex;
+    justify-content: end;
+}
+
+.decor_img{
+    width: 50px;
+    height: 50px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70%;
+    gap: 2rem;
+}
+
+.about_img{
+    width: 40%;
+    height: 20%;
+}
+
+.about_img img{
+    border: 3px white solid;
+    border-radius:48%;
+}
+
+.about_content{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: start;
+    align-items: start;
+}
+
+.about_content h1{
+    justify-content: start;
+    align-items: start;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin: auto; */
+}
+
+.about_content p{
+    justify-content: start;
+    align-items: start;
+    font-size: 1rem;
+    padding: 1rem 0px;
+    color: #999999;
+    line-height: 2rem;
+}
+
+.about_links{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0px;
+}
+
+
+                                      /* 3.) Contact */
+          
+    
+.contactt {
+    align-items: center;
+    background-image:linear-gradient(30deg, rgb(0, 0, 0) 0%, rgba(47, 42, 49, 0.08) 90%), url('https://fotographiya.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-02-15-at-5.12.16-PM-1.jpeg');
+    min-height: 618px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: center; */
+    min-height: 530px;
+    overflow: hidden;
+    padding: 1em;
+    /* opacity: 50%; */
+    position: relative;
+    background-attachment: fixed;
+}
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: flex-start;
+    width: 60%;
+    padding: 5rem;
+}
+                                    
+
+.contact_box h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.contact_box p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    margin: 2rem 0px;
+}
+
+.contact_btn{
+align-self: center;
+/* border: 1px #fff solid ; */
+border-radius: 10px;
+padding: 0.6rem;
+background-color: #8c6d4e;
+}
+
+.contact_btn:hover{
+background-color: #62492f;
+}
+
+
+                                            /* 3.) BLOGS */
+
+
+/* .blogg{
+    background-color: #333;
+} */
+
+
+.blog_container{
+    margin: 6rem auto;
+    margin-bottom: 9rem;
+    width: 80%;
+    border: 3px white solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #88888859;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.blog1{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.blog1 h1{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin: auto;
+    right: 18%;
+    /* bottom: 8px; */
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.blog1 h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.blog1 h1:hover {
+    color:#7c5b38;
+}
+
+.blog1 h1:hover::after {
+    width: 100%;
+    background-color: #7c5b38;
+}
+
+.blog2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.blog2 p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+.blog2 button{
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    color: azure;
+    background-color:#8c6d4e;
+}
+
+.blog2 button:hover{
+    background-color: #62492f;
+}
+
+
+                                                /* 4.) POSTS */
+
+        
+.post_design{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 3rem;
+}
+
+.post_design h1{
+    font-style: normal;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.post_design h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.post_design h1:hover {
+    color:#7c5b38;
+}
+
+.post_design h1:hover::after {
+    width: 100%;
+    background-color: #7c5b38;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 2.3rem;
+    /* justify-content: center; */
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    width: 418px;
+    height: 581px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #1111119a;
+    
+}
+
+.card-image {
+    width: 100%;
+    height: 233px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.card-title:hover {
+    color:#7c5b38;
+}
+
+.card-title:hover::after {
+    width: 100%;
+    background-color: #7c5b38;
+}
+
+.card-date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 12px 0px;
+    font-style: normal;
+    font-size: 1rem;
+    opacity: 80%;
+}
+
+.card-date img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    border-radius: 4rem;
+}
+
+.card-date span{
+    cursor: pointer;
+    font-family: initial;
+}
+
+.card-date span:hover{
+    color:#7c5b38;
+}
+
+.card-description {
+    font-size: 16px;
+    margin: 10px 0px;
+    font-size: 1.1rem;
+    color: #999999;
+    line-height: 1.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.card-button:hover {
+    background-color:#7c5b38;
+}
+
+.post_button{
+    margin:3rem auto;
+    text-align: center;
+}
+.post_btn{
+    font-size: 18px;
+    /* background-color: #62492f; */
+    border-radius: 2px;
+    padding: 15px 18px;
+    background-color: #7d6043;
+}
+.post_btn:hover{
+    background-color: #5f3f1e;
+}
+
+
+                                        /* FOOTER */
+
+.fcontainer{
+    color: #929ba8;
+    background-color: #0e0d0d;
+    padding-top: 4rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.fabout{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width:40% ;
+}
+
+.fabout h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.fabout p{
+    color: #929ba8;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15%;
+    text-align: center;
+    margin:2rem auto;
+    height: 20px;
+}
+
+.social img{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover{
+    transform: scale(1.4);
+}
+
